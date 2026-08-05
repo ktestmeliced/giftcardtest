@@ -3,12 +3,17 @@ const path = require("path");
 
 const app = express();
 
+// Sert tous les fichiers statiques (CSS, JS, images...)
 app.use(express.static(__dirname));
 
+// Affiche le template
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "template.html"));
 });
 
-app.listen(3000, () => {
-    console.log("🚀 Serveur lancé : http://localhost:3000");
+// Railway fournit un port automatiquement
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`🚀 Serveur lancé sur le port ${PORT}`);
 });
