@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#1b1b1b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    overflow:auto;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.voucher{
+
+    position:relative;
+
+    width:2000px;
+
+    height:1048px;
+
+}
+
+.background{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+/****************************/
+/******** STYLE *************/
+/****************************/
+
+.label{
+
+    position:absolute;
+
+    color:#D5A04E;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    z-index:5;
+
+}
+
+.value{
+
+    position:absolute;
+
+    color:white;
+
+    z-index:5;
+
+}
+
+.sender,
+.recipient{
+
+    font-family:Georgia, serif;
+
+    font-size:28px;
+
+}
+
+.amount{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    font-size:82px;
+
+    font-weight:bold;
+
+}
+
+.message{
+
+    font-family:Georgia, serif;
+
+    font-size:28px;
+
+    line-height:1.45;
+
+    width:900px;
+
+}
+
+/****************************/
+/******** POSITIONS *********/
+/****************************/
+
+/* Libellés */
+
+.senderLabel{
+
+    left:135px;
+
+    top:670px;
+
+}
+
+.recipientLabel{
+
+    left:135px;
+
+    top:600px;
+
+}
+
+.amountLabel{
+
+    left:1050px;
+
+    top:430px;
+
+}
+
+.messageLabel{
+
+    left:760px;
+
+    top:600px;
+
+}
+
+/* Valeurs */
+
+.sender{
+
+    left:350px;
+
+    top:670px;
+
+}
+
+.recipient{
+
+    left:250px;
+
+    top:600px;
+
+}
+
+.amount{
+
+    left:1400px;
+
+    top:400px;
+
+}
+
+.message{
+
+    left:760px;
+
+    top:650px;
+
+}
